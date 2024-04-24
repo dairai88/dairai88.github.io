@@ -41,3 +41,11 @@ The above command will:
 2. Remove non-essential sample files and take care of GitHub-related files.
 3. Build JavaScript files and export to `assets/js/dist/`{: .filepath }, then make them tracked by Git.
 4. Automatically create a new commit to save the changes above.
+
+### Installing Dependencies
+
+Before running local server for the first time, go to the root directory of your site and run:
+
+```console
+$ bundle
+```
