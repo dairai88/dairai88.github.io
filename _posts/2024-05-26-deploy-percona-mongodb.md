@@ -1,9 +1,8 @@
 ---
-title: Getting Started
+title: Deploy percona mongodb
 date: 2024-05-26 20:20:00
-categories: [Blogging, Tutorial]
-pin: true
-tags: [getting started]
+categories: [MongoDB, Percona]
+tags: [mongo, percona]
 ---
 
 ## Prerequisites
