@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-date: 2024-05-26 20:20:00
+date: 2024-01-12 14:00:00
 categories: [Blogging, Tutorial]
 pin: true
 tags: [getting started]
