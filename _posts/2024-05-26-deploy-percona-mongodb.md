@@ -1,12 +1,17 @@
 ---
-title: Deploy percona mongodb
+title: Deploy Percona MongoDB
 date: 2024-05-26 20:20:00
 categories: [MongoDB, Percona]
 tags: [mongo, percona]
 ---
 
 ## Prerequisites
-Follow the instructions in the [Jekyll Docs](https://jekyllrb.com/docs/installation/) to complete the installation of the basic environment. [Git](https://git-scm.com/) also needs to be installed.
+
+There is a working Ubuntu 22.04 server. I created one using Multipass utility.
+
+```console
+multipass launch -n mongo jammy
+```
 
 ## Installation
 
