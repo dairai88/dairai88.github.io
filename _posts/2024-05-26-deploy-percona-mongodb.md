@@ -10,17 +10,16 @@ tags: [mongo, percona]
 There is a working Ubuntu 22.04 server. I created one using Multipass utility.
 
 ```console
-multipass launch -n mongo jammy
+multipass launch -n perconamongo1 jammy
 ```
 
 ## Installation
 
-### Creating a New Site
+### Update packages
 
-There are two ways to create a new repository for this theme:
-
-- [**Using the Chirpy Starter**](#option-1-using-the-chirpy-starter) - Easy to upgrade, isolates irrelevant project files so you can focus on writing.
-- [**GitHub Fork**](#option-2-github-fork) - Convenient for custom development, but difficult to upgrade. Unless you are familiar with Jekyll and are determined to tweak or contribute to this project, this approach is not recommended.
+```console
+sudo apt update
+```
 
 #### Option 1. Using the Chirpy Starter
 
