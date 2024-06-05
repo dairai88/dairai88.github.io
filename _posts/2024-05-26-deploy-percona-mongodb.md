@@ -21,7 +21,13 @@ multipass launch -n perconamongo1 jammy
 sudo apt update
 ```
 
-#### Option 1. Using the Chirpy Starter
+### Download artifacts
+
+```console
+wget https://downloads.percona.com/downloads/percona-server-mongodb-7.0/percona-server-mongodb-7.0.8-5/binary/debian/jammy/x86_64/percona-mongodb-mongosh_2.1.5.jammy_arm64.deb
+
+wget https://downloads.percona.com/downloads/percona-server-mongodb-7.0/percona-server-mongodb-7.0.8-5/binary/debian/jammy/x86_64/percona-server-mongodb-server_7.0.8-5.jammy_arm64.deb
+```
 
 Sign in to GitHub and browse to [**Chirpy Starter**][starter], click the button <kbd>Use this template</kbd> > <kbd>Create a new repository</kbd>, and name the new repository `USERNAME.github.io`, where `USERNAME` represents your GitHub username.
 
