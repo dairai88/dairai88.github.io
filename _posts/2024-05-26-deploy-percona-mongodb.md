@@ -48,3 +48,9 @@ Install MongoDB Server
 ```console
 sudo dpkg -i percona-server-mongodb-server_7.0.8-5.jammy_arm64.deb
 ```
+
+### Check mongod status
+
+```console
+sudo systemctl status mongod
+```
