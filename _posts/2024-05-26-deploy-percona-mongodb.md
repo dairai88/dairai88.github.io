@@ -7,7 +7,7 @@ tags: [mongo, percona]
 
 ## Prerequisites
 
-There is a working Ubuntu 22.04 server. I created one using Multipass utility.
+A working Ubuntu 22.04 server. I created one using Multipass utility.
 
 ```console
 multipass launch -n perconamongo1 jammy
@@ -53,4 +53,18 @@ sudo dpkg -i percona-server-mongodb-server_7.0.8-5.jammy_arm64.deb
 
 ```console
 sudo systemctl status mongod
+```
+
+### Start Stop Restart mongod service
+
+```console
+sudo systemctl start mongod
+```
+
+```console
+sudo systemctl stop mongod
+```
+
+```console
+sudo systemctl restart mongod
 ```
