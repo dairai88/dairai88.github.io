@@ -8,3 +8,10 @@ tags: [mongo, percona]
 This post is about deploying a cluster with 3 members.
 
 ## Server instances
+
+```console
+➜  ~ multipass list | grep perconamongo
+perconamongo1           Running           192.168.64.2     Ubuntu 22.04 LTS
+perconamongo2           Running           192.168.64.3     Ubuntu 22.04 LTS
+perconamongo3           Running           192.168.64.4     Ubuntu 22.04 LTS
+```
