@@ -18,6 +18,6 @@ perconamongo3           Running           192.168.64.4     Ubuntu 22.04 LTS
 
 ## Install MongoDB on each instance.
 
-Install MongoDB on each instance using instruction in [Deploy Percona MongoDB](deploy-percona-mongodb).
+Install MongoDB on each instance using instruction in [Deploy Percona MongoDB](posts/deploy-3-members-cluster/).
 
 > Ensure mongod service on each instance is `stopped` with command `sudo systemctl stop mongod`
