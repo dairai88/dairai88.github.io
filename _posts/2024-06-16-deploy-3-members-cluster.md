@@ -6,3 +6,5 @@ tags: [mongo, percona]
 ---
 
 This post is about deploying a cluster with 3 members.
+
+## Server instances
