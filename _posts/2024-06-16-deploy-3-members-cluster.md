@@ -1,6 +1,6 @@
 ---
 title: Deploy 3 members cluster
-date: 2024-06-16 20:55:00
+date: 2024-06-15 20:55:00
 categories: [MongoDB, Percona]
 tags: [mongo, percona]
 ---
