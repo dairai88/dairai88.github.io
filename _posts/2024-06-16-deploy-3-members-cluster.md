@@ -31,3 +31,24 @@ Modify `/etc/hosts` to enable these servers communicating with each other via do
 192.168.64.3 perconamongo2
 192.168.64.4 perconamongo3
 ```
+
+## Create keyfile used to authenticate among servers
+
+```console
+openssl rand -base64 756 > rskeyfile
+
+chmod 400 rskeyfile
+```
+
+Copy keyfile to each server
+
+```console
+multipass transfer rskeyfile perconamongo1:.
+```
+
+In each server, copy rskeyfile to a folder owned by user `mongod`
+
+```console
+sudo cp rskeyfile /var/lib/mongodb/
+sudo chown mongod:mongod /var/lib/mongodb/rskeyfile
+```
