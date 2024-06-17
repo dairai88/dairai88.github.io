@@ -21,3 +21,13 @@ perconamongo3           Running           192.168.64.4     Ubuntu 22.04 LTS
 Install MongoDB on each instance using instruction in [Deploy Percona MongoDB](/posts/deploy-percona-mongodb/).
 
 > Ensure mongod service on each instance is `stopped` with command `sudo systemctl stop mongod`
+
+## Modify hosts
+
+Modify `/etc/hosts` to enable these servers communicating with each other via domain names.
+
+```console
+192.168.64.2 perconamongo1
+192.168.64.3 perconamongo2
+192.168.64.4 perconamongo3
+```
