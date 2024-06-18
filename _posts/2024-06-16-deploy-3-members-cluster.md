@@ -52,3 +52,21 @@ In each server, copy rskeyfile to a folder owned by user `mongod`
 sudo cp rskeyfile /var/lib/mongodb/
 sudo chown mongod:mongod /var/lib/mongodb/rskeyfile
 ```
+
+### Modify `/etc/mongod.conf` on each server
+
+```console
+# network interfaces
+net:
+  port: 27017
+  # bindIp: 127.0.0.1
+  bindIpAll: true
+
+security:
+  keyFile: /var/lib/mongodb/rskeyfile
+
+#operationProfiling:
+
+replication:
+  replSetName: rs0
+```
