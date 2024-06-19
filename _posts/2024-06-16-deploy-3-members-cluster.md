@@ -171,3 +171,17 @@ Verify on perconamongo2 and perconamongo3 server
 ```console
 mongosh --authenticationDatabase "admin" -u dalei -p
 ```
+
+### Create an user to read write any database
+
+```console
+use admin
+
+db.createUser({
+    user: "demo",
+    pwd: "demo",
+    roles: [
+        { role: "readWriteAnyDatabase", db: "admin" }
+    ]
+})
+```
