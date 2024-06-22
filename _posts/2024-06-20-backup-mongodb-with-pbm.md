@@ -24,3 +24,19 @@ db.getSiblingDB("admin").createRole({ "role": "pbmAnyAction", "privileges": [ { 
 # Create user
 db.getSiblingDB("admin").createUser({ user: "pbmuser", "pwd": "secretpwd", "roles": [ { "db": "admin", "role": "readWrite", "collection": "" }, { "db": "admin", "role": "backup" }, { "db": "admin", "role": "clusterMonitor" }, { "db": "admin", "role": "restore" }, { "db": "admin", "role": "pbmAnyAction" }] })
 ```
+
+Set MongoDB connection URI for pbm-agent
+
+```console
+sudo vim /etc/default/pbm-agent
+
+PBM_MONGODB_URI="mongodb://pbmuser:secretpwd@localhost:27017/?authSource=admin"
+```
+
+Set MongoDB connection URI for pbm client
+
+```console
+vim ~/.bashrc
+
+export PBM_MONGODB_URI="mongodb://pbmuser:secretpwd@localhost:27017/?authSource=admin&replSetName=rs0"
+```
