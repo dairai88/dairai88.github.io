@@ -12,3 +12,15 @@ wget https://downloads.percona.com/downloads/percona-backup-mongodb/percona-back
 
 sudo dpkg -i percona-backup-mongodb_2.5.0-1.jammy_arm64.deb 
 ```
+
+### Create the `pbm` user
+
+On primary node
+
+```console
+# Create role 
+db.getSiblingDB("admin").createRole({ "role": "pbmAnyAction", "privileges": [ { "resource": { "anyResource": true }, "actions": ["anyAction"] }], "roles": [] })
+
+# Create user
+db.getSiblingDB("admin").createUser({ user: "pbmuser", "pwd": "secretpwd", "roles": [ { "db": "admin", "role": "readWrite", "collection": "" }, { "db": "admin", "role": "backup" }, { "db": "admin", "role": "clusterMonitor" }, { "db": "admin", "role": "restore" }, { "db": "admin", "role": "pbmAnyAction" }] })
+```
