@@ -58,3 +58,9 @@ storage:
       secret-access-key: 
 
 ```
+
+### Start pbm-agent
+
+```console
+sudo systemctl start pbm-agent
+```
