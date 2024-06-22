@@ -40,3 +40,21 @@ vim ~/.bashrc
 
 export PBM_MONGODB_URI="mongodb://pbmuser:secretpwd@localhost:27017/?authSource=admin&replSetName=rs0"
 ```
+
+### Configure remote backup storage
+
+```console
+vim pbm_config.yaml
+
+storage:
+  type: s3
+  s3:
+    endpointUrl: "http://39.99.132.13:9000"
+    region: us-west-rack-2
+    bucket: mongobackup
+    prefix: data/pbm/test
+    credentials:
+      access-key-id: 
+      secret-access-key: 
+
+```
