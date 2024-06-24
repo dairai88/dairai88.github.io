@@ -10,7 +10,7 @@ tags: [mongo, percona]
 I will install MongoDB server and MongoDB shell in Ubuntu 22.04. To setup a working Ubuntu vm, I created one using Multipass as below.
 
 ```console
-multipass launch -n perconamongo1 jammy
+multipass launch --name perconamongo1 --disk 10G --memory 2G jammy
 ```
 
 ## Installation
