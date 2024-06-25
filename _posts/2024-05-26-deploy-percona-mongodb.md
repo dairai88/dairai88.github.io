@@ -26,13 +26,13 @@ sudo apt update
 Download MongoDB Shell
 
 ```console
-wget https://downloads.percona.com/downloads/percona-server-mongodb-7.0/percona-server-mongodb-7.0.8-5/binary/debian/jammy/x86_64/percona-mongodb-mongosh_2.1.5.jammy_arm64.deb
+wget https://downloads.percona.com/downloads/percona-server-mongodb-7.0/percona-server-mongodb-7.0.11-6/binary/debian/jammy/x86_64/percona-mongodb-mongosh_2.1.5.jammy_arm64.deb
 ```
 
 Download MongoDB Server
 
 ```console
-wget https://downloads.percona.com/downloads/percona-server-mongodb-7.0/percona-server-mongodb-7.0.8-5/binary/debian/jammy/x86_64/percona-server-mongodb-server_7.0.8-5.jammy_arm64.deb
+wget https://downloads.percona.com/downloads/percona-server-mongodb-7.0/percona-server-mongodb-7.0.11-6/binary/debian/jammy/x86_64/percona-server-mongodb-server_7.0.11-6.jammy_arm64.deb
 ```
 
 ### Install artifacts
