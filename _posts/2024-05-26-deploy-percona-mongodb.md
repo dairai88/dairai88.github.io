@@ -13,13 +13,13 @@ I will install MongoDB server and MongoDB shell in Ubuntu 22.04. To setup a work
 multipass launch --name perconamongo1 --disk 10G --memory 2G jammy
 ```
 
-## Installation
-
-### Update packages
+Update apt packages
 
 ```console
 sudo apt update
 ```
+
+## Installation
 
 ### Download artifacts
 
