@@ -60,6 +60,9 @@ storage:
     path: /data/local_backups
 
 ```
+```console
+pbm config --file pbm_config.yaml
+```
 
 ### Start pbm-agent
 

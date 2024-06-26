@@ -13,3 +13,8 @@ tags: [java]
 
 ### Ansible
 - [Manage your Multipass VMs with Ansible](https://theko2fi.medium.com/manage-your-multipass-vms-with-ansible-a84cdd7bcbe8)
+
+### SonarQube
+- [Code Analysis with SonarQube](https://www.baeldung.com/sonar-qube)
+- [Try out SonarQube](https://docs.sonarsource.com/sonarqube/latest/try-out-sonarqube/)
+- [SonarQube with database](https://github.com/ravdy/DevOps/blob/master/sonarqube/Sonarqube_with_database.md)

@@ -44,6 +44,8 @@ Copy keyfile to each server
 
 ```console
 multipass transfer rskeyfile perconamongo1:.
+multipass transfer rskeyfile perconamongo2:.
+multipass transfer rskeyfile perconamongo3:.
 ```
 
 In each server, copy rskeyfile to a folder owned by user `mongod`
