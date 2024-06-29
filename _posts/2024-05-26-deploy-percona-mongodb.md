@@ -19,9 +19,7 @@ Update apt packages
 sudo apt update
 ```
 
-## Installation
-
-### Download artifacts
+## Download artifacts
 
 Download MongoDB Shell
 
@@ -35,7 +33,7 @@ Download MongoDB Server
 wget https://downloads.percona.com/downloads/percona-server-mongodb-7.0/percona-server-mongodb-7.0.11-6/binary/debian/jammy/x86_64/percona-server-mongodb-server_7.0.11-6.jammy_arm64.deb
 ```
 
-### Install artifacts
+## Install artifacts
 
 Install MongoDB Shell
 
@@ -49,13 +47,13 @@ Install MongoDB Server
 sudo dpkg -i percona-server-mongodb-server_7.0.11-6.jammy_arm64.deb
 ```
 
-### Check mongod status
+## Check MongoDB status
 
 ```console
 sudo systemctl status mongod
 ```
 
-### Start Stop Restart mongod service
+## Start Stop Restart MongoDB service
 
 ```console
 sudo systemctl start mongod
